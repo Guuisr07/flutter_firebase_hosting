@@ -1,5 +1,8 @@
 name: Build and Release APK
-on: push
+on:
+  push:
+    branches:
+      - dev
 jobs:
   hosting:
     name: Deploy Website

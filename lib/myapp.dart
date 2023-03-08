@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:lottie/lottie.dart';
 
 class MyApp extends StatelessWidget {
@@ -32,15 +30,14 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              const Text(
+            children: const [
+              Text(
                 'Wellify - Health App',
                 style: TextStyle(
                   fontSize: 50,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Lottie.asset('assets/animations/health-animation.json'),
             ],
           ),
         ),
