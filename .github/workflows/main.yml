@@ -25,6 +25,11 @@ jobs:
           flutter build web --release
         working-directory: ./
 
+      - name: Decode firebase_option
+        env:
+          firebase_options_dart: ${{secrets.FIREBASE_OPTION}}
+        run: echo "$firebase_options_dart" > lib/firebase_options.dart
+
       # Deploy Firebase Hosting
       - name: Deploy Firebase Hosting
         uses: w9jds/firebase-action@master
