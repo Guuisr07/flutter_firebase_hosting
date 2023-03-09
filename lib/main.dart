@@ -4,6 +4,8 @@ import 'package:flutter_firebase_hosting/firebase_options.dart';
 
 import 'myapp.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
 }
