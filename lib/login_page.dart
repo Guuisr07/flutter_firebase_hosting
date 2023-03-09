@@ -131,16 +131,14 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ),
                       InkWell(
-                        child: const Expanded(
-                          child: Text(
-                            'Esqueceu a senha?',
-                            textAlign: TextAlign.left,
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.normal,
-                              color: Colors.purple,
-                              decoration: TextDecoration.underline,
-                            ),
+                        child: const Text(
+                          'Esqueceu a senha?',
+                          textAlign: TextAlign.left,
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.normal,
+                            color: Colors.purple,
+                            decoration: TextDecoration.underline,
                           ),
                         ),
                         onTap: () {
