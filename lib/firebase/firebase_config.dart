@@ -6,11 +6,11 @@ Future initFirebase() async {
     await Firebase.initializeApp(
         options: const FirebaseOptions(
       apiKey: 'AIzaSyAhUF-wv0vEvCPNY9vsUQCjr6ttYwcjjBE',
-      appId: '1:903426169932:web:e85bff3b94c8eba9d9a8e9',
+      appId: '1:433596666128:web:d87f3fe09a52615fa69595',
       messagingSenderId: '903426169932',
-      projectId: 'my-website-f4f19',
-      authDomain: 'my-website-f4f19.firebaseapp.com',
-      storageBucket: 'my-website-f4f19.appspot.com',
+      projectId: 'project-teste-e87a5',
+      authDomain: 'project-teste-e87a5.firebaseapp.com',
+      storageBucket: 'project-teste-e87a5.appspot.com',
     ));
   } else {
     await Firebase.initializeApp();
