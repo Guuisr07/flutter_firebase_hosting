@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
               Lottie.asset('assets/animations/health-animation.json'),
               ElevatedButton(
                 onPressed: () => context.read<AuthService>().logout(),
-                child: const Text('Logout'),
+                child: const Text('Sair do app'),
               ),
             ],
           ),
